@@ -155,7 +155,7 @@ int main() {
           Prediction prediction_1s = environment.predict_environment(map_waypoints, prediction_time);
 
           // predict the ego-car in T second
-          vector<double> prediction_ego = predict_ego(ego, map_waypoints, T);
+          vector<double> prediction_ego = predict_ego(ego, map_waypoints, prediction_time);
 
 
           // 2. Behavior planning
